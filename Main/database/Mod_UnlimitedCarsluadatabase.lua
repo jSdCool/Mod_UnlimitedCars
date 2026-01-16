@@ -14,7 +14,7 @@ local api = global.api
 -- We require the logger table (which is returned) and call the Get method which returns a logger with
 -- a name (our file name for example).
 -- Comment out this below line if you want to use the logger instead!
--- local logger = require("forgeutils.logger").Get("INSERT_MODNAME_HEREluadatabase")
+-- local logger = require("forgeutils.logger").Get("Mod_UnlimitedCarsluadatabase")
 
 -- This is our lua database table.
 -- The game will run the code in this file and use this table.
@@ -28,7 +28,7 @@ function LuaDB.AddContentToCall(_tContentToCall)
     if not api.acse or api.acse.versionNumber < 0.7 then
         return
     end
-    table.insert(_tContentToCall, require("database.INSERT_MODNAME_HEREluadatabase"))
+    table.insert(_tContentToCall, require("database.Mod_UnlimitedCarsluadatabase"))
 end
 
 -- This is one database function that can be called.
@@ -36,8 +36,8 @@ end
 LuaDB.Init = function()
     -- You can either use trace here, or use a ForgeUtils logger.
     -- I have included the code to create a ForgeUtils logger below, uncomment if you'd like to use it.
-    -- logger:Info("INSERT_MODNAME_HERE called Init()!")
-    api.debug.Trace("INSERT_MODNAME_HERE called Init()!")
+    -- logger:Info("Mod_UnlimitedCars called Init()!")
+    api.debug.Trace("Mod_UnlimitedCars called Init()!")
 end
 
 -- If using ForgeUtils, this method is called when database data should be inserted.
