@@ -46,4 +46,8 @@ end
 
 -- We return the LuaDB down here so that when this file
 -- is required by the game, it returns the table with our functions.
+LuaDB.Active = function()
+    api.debug.Trace("Mod_UnlimitedCars Active!")
+end
+
 return LuaDB
