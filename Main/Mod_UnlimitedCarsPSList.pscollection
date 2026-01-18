@@ -1,0 +1,11 @@
+<PscollectionRoot count="1" game="Planet Coaster 2">
+    <prepared_statements pool_type="4">
+        <preparedstatement arg_count="1">
+            <args pool_type="4">
+                <arg arg_type="0" arg_index="1" />
+            </args>
+            <statement_name pool_type="6">SetAllCarLimit</statement_name>
+            <sql_query pool_type="6">UPDATE Trains SET MaxCars=?1;</sql_query>
+        </preparedstatement>
+    </prepared_statements>
+</PscollectionRoot>
